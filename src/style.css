@@ -1,0 +1,102 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: 0.2s;
+}
+
+#banner {
+    height: 85vh !important;
+}
+
+.left_banner {
+    top: 20%;
+    left: 20%;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.right_banner {
+    bottom: 20%;
+    right: 20%;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.img_banner {
+    width: 60vh;
+    filter: drop-shadow(30px 0px 5px rgba(0, 0, 0, 0.4));
+    animation: bouncelittle infinite 2s ease-in-out;
+}
+
+.img_banner:hover {
+    filter: drop-shadow(30px 30px 5px rgba(53, 53, 53, 0.8));
+}
+
+@keyframes bouncelittle {
+    0%,
+    100% {
+        transform: translate(-50%, 22%);
+    }
+
+    50% {
+        transform: translate(-50%, 20%);
+    }
+}
+
+/* Sign in UI */
+#logo_signin {
+    filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.5));
+}
+
+#dropdownuser {
+    display: none;
+}
+
+#userStatus:hover > #dropdownuser {
+    display: block;
+}
+
+/* Ẩn thanh cuộn trên Chrome và Safari */
+.overscrollHidden::-webkit-scrollbar {
+    width: 0;
+}
+
+.overscrollHidden::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+/* Hiển thị thanh cuộn trên hover */
+.overscrollHidden:hover::-webkit-scrollbar-thumb {
+    background-color: #888;
+}
+
+#order_info {
+    max-height: 50vh;
+}
+
+#renderProds {
+    max-height: 80vh;
+}
+
+#cart_info {
+    max-height: 70vh;
+    border-width: 4px;
+    border-style: solid;
+    border-image: linear-gradient(to top right, rgb(249 115 22), rgb(251 191 36)) 0 1 0 0 stretch;
+}
+
+#searchbox {
+    height: 65vh;
+}
+
+.bounce {
+    animation: bounce 1.2s infinite ease-in-out;
+}
+
+@keyframes bounce {
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateY(-6px);
+        color: #ff9c00;
+    }
+}
